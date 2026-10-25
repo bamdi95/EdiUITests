@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+	<!-- Configurations that affect the Test Framework -->
+	<RunConfiguration>
+		<NumberOfTestWorkers>1</NumberOfTestWorkers>
+		<!-- Path relative to directory that contains .runsettings file-->
+		<ResultsDirectory>.\TestResults</ResultsDirectory>
+	</RunConfiguration>
+
+	<!-- Parameters used by tests at run time -->
+	<TestRunParameters>
+		<Parameter name="EdiPath" value="C:\Users\bamdi\Documents\GitHub\Edi\Release\Edi.exe" />
+	</TestRunParameters>
+	<LoggerRunSettings>
+		<Loggers>
+			<Logger friendlyName="trx">
+				<Configuration>
+					<LogFileName>EdiUITests.trx</LogFileName>
+				</Configuration>
+			</Logger>
+			<Logger friendlyName="html">
+				<Configuration>
+					<LogFileName>EdiUITests.html</LogFileName>
+				</Configuration>
+			</Logger>
+		</Loggers>
+	</LoggerRunSettings>
+</RunSettings>

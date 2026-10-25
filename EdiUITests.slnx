@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="edi.runsettings" />
+  </Folder>
+  <Project Path="EdiUITests/EdiUITests.csproj" />
+</Solution>
