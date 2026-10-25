@@ -9,7 +9,7 @@
 
 	<!-- Parameters used by tests at run time -->
 	<TestRunParameters>
-		<Parameter name="EdiPath" value="C:\Users\bamdi\Documents\GitHub\Edi\Release\Edi.exe" />
+		<Parameter name="EdiPath" value="Path\To\Edi.exe" />
 	</TestRunParameters>
 	<LoggerRunSettings>
 		<Loggers>
