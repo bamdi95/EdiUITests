@@ -10,6 +10,7 @@ namespace EdiUITests.Tests
     {
         [Test]
         [Category("Start Application")]
+        [Description("Given app is not running, when starting the app, then the main window is loaded")]
         public void AppNotRun_StartApp_AppRunWindowLoaded()
         {
             App = FlaUI.Core.Application.Launch(SetupFixture.EdiPath);
@@ -19,6 +20,7 @@ namespace EdiUITests.Tests
         [Test]
         [Category("File Open")]
         [Category("Start Application")]
+        [Description("Given app is not running, when opening a read-only text file through the command line argument, then the content is displayed and not editable")]
         public void AppNotRun_OpenReadOnlyTextViaArg_ShownReadOnly()
         {
             var filePath = WorkSpace.CopyFileToWorkspace(ResourceFilePaths.NotEmptyTxt, true);
@@ -39,6 +41,7 @@ namespace EdiUITests.Tests
         [Test]
         [Category("File Open")]
         [Category("Start Application")]
+        [Description("Given app is not running and recent files contains a file, when opening a read-only text file through the command line argument, then the content is displayed and not editable")]
         public void AppNotRunRecentFile_OpenReadOnlyTextViaArg_ShownReadOnly()
         {
             var filePath = WorkSpace.CopyFileToWorkspace(ResourceFilePaths.NotEmptyTxt, true);
