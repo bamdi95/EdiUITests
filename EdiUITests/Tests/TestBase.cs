@@ -62,7 +62,7 @@ namespace EdiUITests.Tests
                 {
                     output.AppendLine($"--- launch #{i} ---").Append(edi.Output);
                 }
-                if (File.Exists(edi.LogFile) && new FileInfo(edi.LogFile).Length > 0)
+                if (File.Exists(edi.LogFile))
                 {
                     TestContext.AddTestAttachment(edi.LogFile, $"Edi log (launch #{i})");
                 }
